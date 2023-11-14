@@ -1,0 +1,47 @@
+{
+	"name": "@notice-org/nuxt",
+	"version": "1.0.0",
+	"description": "Notice Nuxt plugin",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/types.d.ts",
+			"import": "./dist/module.mjs",
+			"require": "./dist/module.cjs"
+		}
+	},
+	"main": "./dist/module.cjs",
+	"types": "./dist/types.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"prepack": "nuxt-module-build build",
+		"dev": "nuxi dev playground",
+		"dev:build": "nuxi build playground",
+		"dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+		"release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+		"lint": "eslint .",
+		"test": "vitest run",
+		"test:watch": "vitest watch",
+		"prepublishOnly": "nuxt-module-build build"
+	},
+	"dependencies": {
+		"@notice-org/ntc": "^1.0.4",
+		"@nuxt/kit": "^3.8.1"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "latest",
+		"@nuxt/eslint-config": "^0.2.0",
+		"@nuxt/module-builder": "^0.5.3",
+		"@nuxt/schema": "^3.8.1",
+		"@nuxt/test-utils": "^3.8.1",
+		"@types/node": "^20.8.10",
+		"changelogen": "^0.5.5",
+		"eslint": "^8.53.0",
+		"nuxt": "^3.8.1",
+		"prettier": "^3.0.3",
+		"vitest": "^0.33.0"
+	}
+}
