@@ -1,94 +1,26 @@
-<!--
-Get your module up and running quickly.
+## Introduction
+[Notice](https://notice.studio) allows you to create Blog, Documentation, Help Center, FAQs, Terms and Conditions, Whitepapers, Job Boards, single Articles, and so on. In 1 minute, you can get started with our template or AI.
 
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
--->
+Notice handles translations, SEO, analytics, collaboration. It's a cross-platform page builder, a new kind of web component dedicated to content. You can use our [API](https://notice-api.readme.io/reference/get-published-block) to get more flexibility with integrating Notice, and use us as a headless CMS.
 
-# My Module
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
+## Install
+Steps to install Notice with NuxtJS are listed on our documentation [integrations.notice.site/nuxtjs-47p9cqdk66](https://integrations.notice.site/nuxtjs-47p9cqdk66)
 
-My new Nuxt module for doing amazing things.
+### Steps to get live example
+- clone the repository of this package
+- `npm install`
+- `cd playground`
+- `npm run dev` 
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+## Questions, issues & feedback
+Reach out to us at **dev@notice.studio**
 
-## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+## Example usage
+- Create an extensive multi page help center with Notice
+- Host it with notice.site
+- Also integrate sub-pages in help modals or tooltips directly in your app with this package
 
-## Quick Setup
+No need to duplicate the content, synchronisation in real-time each time someone publishes.
 
-1. Add `my-module` dependency to your project
-
-```bash
-# Using pnpm
-pnpm add -D my-module
-
-# Using yarn
-yarn add --dev my-module
-
-# Using npm
-npm install --save-dev my-module
-```
-
-2. Add `my-module` to the `modules` section of `nuxt.config.ts`
-
-```js
-export default defineNuxtConfig({
-  modules: [
-    'my-module'
-  ]
-})
-```
-
-That's it! You can now use My Module in your Nuxt app ✨
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Generate type stubs
-npm run dev:prepare
-
-# Develop with the playground
-npm run dev
-
-# Build the playground
-npm run dev:build
-
-# Run ESLint
-npm run lint
-
-# Run Vitest
-npm run test
-npm run test:watch
-
-# Release new version
-npm run release
-```
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/my-module
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/my-module
-
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/my-module
-
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
-[nuxt-href]: https://nuxt.com
