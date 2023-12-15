@@ -10,7 +10,6 @@ Steps to install Notice with NuxtJS are listed on our documentation [integration
 ### Steps to get live example
 - clone the repository of this package
 - `npm install`
-- `cd playground`
 - `npm run dev` 
 
 ## Questions, issues & feedback
